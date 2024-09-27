@@ -1,0 +1,60 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customers_sample.csv",
+				"fileSystem": "cgscontain"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "11599",
+				"type": "String"
+			},
+			{
+				"name": "Richard",
+				"type": "String"
+			},
+			{
+				"name": "Hernandez",
+				"type": "String"
+			},
+			{
+				"name": "XXXXXXXXX3",
+				"type": "String"
+			},
+			{
+				"name": "XXXXXXXXX4",
+				"type": "String"
+			},
+			{
+				"name": "6303 Heather Plaza",
+				"type": "String"
+			},
+			{
+				"name": "Brownsville",
+				"type": "String"
+			},
+			{
+				"name": "TX",
+				"type": "String"
+			},
+			{
+				"name": "78521",
+				"type": "String"
+			}
+		]
+	}
+}
